@@ -84,10 +84,10 @@ def question8():
     answers["(a) P(X_1=1,X_2=1)"] = 0.28
 
     # string: "dependent" or "independent"
-    answers["(a) Relationship between X_1 and X_2"] = "dependent"
+    answers["(a) Relationship between X_1 and X_2"] = "independent" 
 
     # string: "yes" or "no"
-    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "yes"  # Based on Naive Bayes assumption
+    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "yes"  
 
     # float
     answers["(c) P(X_1=1 | +)"] = 0.8
@@ -100,7 +100,7 @@ def question8():
     # For each row give the class predicted by the model after training using Naive Bayes
     # String: either '+' or '-'
     answers["(d) Row 1"] = '+'
-    answers["(d) Row 2"] = '+'
+    answers["(d) Row 2"] = '+' 
     answers["(d) Row 3"] = '-'
     answers["(d) Row 4"] = '-'
 
@@ -140,9 +140,9 @@ def question10():
     answers["(a) P(A=1|+) explain your answer"] = "The conditional probabilities are calculated by dividing the number of positive or negative instances where the feature equals 1 by the total number of positive or negative instances, respectively."
   
     # Probabilities for predicting class label for a test sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = 0.8571428571428571
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    answers["(b) P(+|R)"] = 0.8571428571428571 ##1
+    answers["(b) P(R|+)"] =0.2
+    answers["(b) P(R|-)"] = 0.0
 
     # Predicted class label for the test sample
     answers["(b) class label"] = '+'
@@ -156,10 +156,10 @@ def question10():
     answers["(c) P(A=1,B=1)"] = 0.2
     answers["(c) A independent of B?"] = 'yes'
   
-    answers["(d) P(A=1)"] = 0.5  # Same as part (c), for consistency in explanation
-    answers["(d) P(B=0)"] = 0.6  # Complement of P(B=1)
-    answers["(d) P(A=1,B=0)"] = "N/A"  # Specific computation not shown
-    answers["(d) A independent of B?"] = 'yes'  # Based on the general analysis
+    answers["(d) P(A=1)"] = 0.5  
+    answers["(d) P(B=0)"] = 0.6  
+    answers["(d) P(A=1,B=0)"] = 0.3
+    answers["(d) A independent of B?"] = 'yes'  
 
     # Conditional independence given class +
     answers["(e) P(A=1,B=1|+)"] = 0.2
@@ -176,9 +176,9 @@ def question10():
 if __name__ == '__main__':
     answers_dict = {}
     answers_dict['question1'] = question1()
-    answers_dict['question2'] = question2()
+    #answers_dict['question2'] = question2()
     answers_dict['question3'] = question3()
-    answers_dict['question4'] = question4()
+    #answers_dict['question4'] = question4()
     answers_dict['question7'] = question7()
     answers_dict['question8'] = question8()
     answers_dict['question9'] = question9()
